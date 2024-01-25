@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form Example</title>
+</head>
+<body>
+
+    <centre><h2>Contact Us</h2></centre>
+
+    <!-- The form starts here -->
+    <centre>
+    <form action="/submit_form" method="post">
+
+        <!-- Text input field -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <br>
+
+        <label for ="age">Age:</label>
+        <input type = "number" id = "age" name = "age" required>
+
+        <br>
+
+        <!-- Email input field -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <br>
+
+        <label for = "address">Address:</label>
+        <input type ="text" id="address" name="address" required>
+
+        <br>
+
+        <!-- Radio buttons for gender -->
+        <label>Gender:</label>
+       
+        <input type="radio" id = "male" name="gender" value="male" checked>
+        <label for = "male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" checked>
+        <label for="female">Female</label>
+
+        <br>
+
+        <!-- Checkbox for newsletter subscription -->
+        <input type="checkbox" id="subscribe" name="subscribe" value="subscribe">
+        <label for="subscribe">Subscribe to our newsletter</label>
+
+        <br>
+        <input type ="checkbox" id = "follow" name="follow" value="follow">
+        <label for="follow">follow our youtube channel link in below👇</label><br>
+        <a href="https://www.youtube.com/">newsletter youtube</a>
+
+        <br>
+
+        <!-- Dropdown/select menu -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="usa">United States</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="india">india</option>
+            <option value="america">america</option>
+            <option value="taiwan">taiwan</option>
+            <option value="srilanka">srilanka</option>
+            <!-- Add more options as needed -->
+        </select>
+
+        <br>
+
+        <!-- Textarea for additional comments -->
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="10"></textarea>
+
+        <br>
+
+        <!-- Submit button -->
+        <input type="submit" value="Submit">
+
+    </form>
+</centre>
+    <!-- The form ends here -->
+
+</body>
+</html>
